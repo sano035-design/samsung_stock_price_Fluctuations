@@ -12,7 +12,7 @@ samsung_ticker = "005930.KS"
 us_tickers = ["NVDA", "MU"]
 
 print("2026년 최신 데이터를 기반으로 분석 중입니다...")
-samsung_data = yf.download(samsung_ticker, start="2026-01-01", auto_adjust=False)['Adj Close']
+samsung_data = yf.download(samsung_ticker, start="2026-01-01", auto_adjust=False)['Adj Close'].squeeze()
 us_data = yf.download(us_tickers, start="2026-01-01", auto_adjust=False)['Adj Close']
 
 # =============================================================
