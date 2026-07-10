@@ -100,8 +100,11 @@ Gmail SMTP  →  📧 Inbox
 
 > Credentials are never stored in the code. They are read at runtime via `os.environ`.
 
-### 3. Manual Test
+### 3. Manual Test / Reactivation
 `GitHub → Actions tab → Daily Samsung Stock Report → Run workflow`
+
+> [!NOTE]
+> **GitHub Actions Inactivity Policy:** GitHub automatically suspends scheduled workflows if there has been no commit activity in the repository for 60 days. If the daily email report stops arriving, you can reactivate it by making any commit (such as updating this README) or by manually running the workflow once in the Actions tab.
 
 ---
 
@@ -210,8 +213,11 @@ Gmail SMTP  →  📧 메일함
 
 > 비밀번호는 코드에 저장되지 않으며, 실행 시 `os.environ`을 통해서만 읽습니다.
 
-### 3. 수동 테스트
+### 3. 수동 테스트 및 재활성화
 `GitHub → Actions 탭 → Daily Samsung Stock Report → Run workflow`
+
+> [!NOTE]
+> **GitHub Actions 비활성화 정책:** GitHub은 저장소에 60일 동안 커밋 등의 활동이 없으면 예약된 워크플로(scheduled workflow)를 자동으로 일시 중지합니다. 메일이 더 이상 수신되지 않는다면, 저장소에 커밋을 푸시하거나 Actions 탭에서 워크플로를 수동으로 1회 실행하여 재활성화할 수 있습니다.
 
 ---
 
